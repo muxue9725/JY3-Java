@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		
+		#tuoyuan
+		{
+	width: 240px;
+     height: 240px;
+     background: white;
+     border-radius: 50%;
+     border:1px solid #000;		
+		position: absolute;
+     top:70px;
+     left: 38px;
+     z-index: 1;	
+			
+			
+		}
+		
+		
+		#circle
+		{
+     width: 300px;
+     height: 290px;
+     background: rgb(13,161,223);
+     -moz-border-radius: 150px;
+     -webkit-border-radius: 150px;
+     border-radius: 150px;
+     border:1px solid #000;
+     position: absolute;
+     top:18px;
+     left: 8px;
+     	}
+     	#nacklace
+     	{
+     width:200px;
+     height: 28px;
+     background-color: red;
+     border-radius: 150px;
+     position: absolute;
+     top:285px;
+     left: 56px;
+     z-index: 2;
+     		
+     	}
+     	#smallbell
+     	{
+     width:40px;
+     height: 40px;
+     background-color: gold;
+     border-radius: 20px;
+     position: absolute;
+     top:285px;
+     left: 136px;
+     z-index: 3;		
+     		
+     		
+     	}
+     	
+     	#eyes1
+     	{
+     width: 40px;	
+     height: 61px;	
+     	background-color: ;	
+     	border:1px solid #000;	
+     	border-radius: 21px;
+     position: relative;
+     left:102px;
+     top:42px;
+     z-index: 2;
+     background-color: white;
+     
+     	float:left
+     	
+     	
+     	}
+     	
+     	
+     	#eyes2
+     	{
+    	
+     	width: 40px;	
+     height: 61px;	
+     	background-color: ;	
+     	border:1px solid #000;	
+     	border-radius: 21px;
+     position: relative;
+     left:102px;
+     top:42px;
+     z-index: 2;
+     background-color: white;
+     
+     	float:left	
+     	}
+	 #nosemouse
+	 {
+	 	width: 130px;
+     height: 130px;
+     -moz-border-radius: 150px;
+     -webkit-border-radius: 150px;
+     border-radius: 0px 0px 150px 150px;
+     height: 65px;
+     border:1px solid #000;
+     background:#DC143C;
+     overflow: hidden;
+     float: left;
+     
+     z-index: 3;
+     
+    
+     position: relative;
+     top: 185px;
+    
+     border:1px solid #000;
+     
+	 	
+	 }
+	 #nose
+	 {	
+     width: 30px;
+     height: 30px;
+     background: red;
+    
+     border-radius: 15px;
+     float: left;
+     z-index: 3;
+     border:1px solid #000;
+	 position: absolute;
+	 top:130px;
+	 left: 136px;
+	
+	 	
+	 	
+	 	
+	 	
+	 }
+	 #light
+	 {
+	 	width: 5px;
+	 	height: 5px;
+	 	background-color: white;
+	 	border-radius: 50%;
+	 	position: relative;
+	 	top:9px;
+	 	left: 4px;
+	 	
+	 }
+	 #tongue
+	 {width: 90px;
+	 	height: 50px;
+	 	background-color: 		#FFB6C1;
+	 	
+	 	border-radius: 25px 25px 0 0;
+	 	position: relative;
+	 	top:30px;
+	 	left: 18px;
+	 	
+	 	
+	 	
+	 	
+	 }
+	 
+	 #yanqiu1
+	 {
+	 	width: 30px;
+	 	height: 30px;
+	 	background-color: black;
+	 	border-radius: 50%;
+	 	position: relative;
+	 	top:30px;
+	 	
+	 	
+	 }
+	 #yanqiu2
+	 {
+	 	 
+	 	width: 30px;
+	 	height: 30px;
+	 	background-color: black;
+	 	border-radius: 50%;
+	 	position: relative;
+	 	top:30px;
+	 	
+	 	
+	 
+	 	
+	 	
+	 	
+	 }
+	
+	.huzi:nth-child(1)
+	 {
+	 	width: 40px;
+	 	height: 2px;
+	 	
+	 background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113) );
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 180px;
+	 	top: 111px;
+	 	-webkit-transform:rotate(6deg);
+	 	
+	 }	
+	 .huzi:nth-child(2)
+	 {
+	 width: 40px;
+	 	height: 2px;
+	 	
+	 background-image:linear-gradient(to left,rgb(255,192,203),rgb(160,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 180px;
+	 	top: 111px;
+	 	-webkit-transform:rotate(40deg);
+	 }
+	 .huzi:nth-child(3)
+	 {
+	 	width: 40px;
+	 	height: 2px;
+	 	
+	 background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 180px;
+	 	top: 111px;
+	 	-webkit-transform:rotate(-10deg);
+	 }
+	 .huzi:nth-child(4)
+	 {
+	 	width: 40px;
+	 	height: 2px;
+	 	
+	 background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 180px;
+	 	top: 130px;
+	 	-webkit-transform:rotate(90deg);
+	 }
+	 .huzi:nth-child(5)
+	 {
+	 	width: 40px;
+	 	height: 2px;
+	 	
+	 background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 180px;
+	 	top: 111px;
+	 	-webkit-transform:rotate(24deg);
+	 }
+	 .huzi:nth-child(6)
+	 {
+	 	width: 40px;
+	 	height: 2px;
+	 	
+	 background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 180px;
+	 	top: 111px;
+	 	-webkit-transform:rotate(140deg);
+	 }
+	 .huzi:nth-child(7)
+	 {
+	 	width: 16px;
+	 	height: 2px;
+	 	
+	 	background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 197px;
+	 	top: 100px;
+	 	-webkit-transform:rotate(120deg);
+	 }
+	  .huzi:nth-child(8)
+	 {
+	 	width: 16px;
+	 	height: 2px;
+	 	;
+	 	background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 192px;
+	 	top: 100px;
+	 	-webkit-transform:rotate(90deg);
+	 }
+	  .huzi:nth-child(9)
+	 {
+	 	width: 16px;
+	 	height: 2px;
+	 	
+	 	background-image:linear-gradient(to left,rgb(255,192,203),rgb(60,179,113)) ;
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 186px;
+	 	top: 100px;
+	 	-webkit-transform:rotate(60deg);
+	 }
+	 
+	 
+	 
+	 
+	 #detail
+	 {	width: 30px;
+	 
+	 	height: 2px;
+	 	border:1px solid #000;
+	 	position: relative;
+	 	border-radius: 6px;
+	 	top:10px;
+	 	left: 5px;
+	 	
+	 	
+	 	
+	 	
+	 }
+	 #detail2
+	 {
+	 	 
+	 	width: 15px;
+	 	height: 15px;
+	 	background-color: gray;
+	 	border-radius: 50%;
+	 	position: relative;
+	 	top:10px;
+	 	left: 13px;
+	 	
+	 	
+	 	
+	 }
+	 #eyelight1
+	 {
+	 	width: 5px;
+	 	height: 5px;
+	 	background-color: white;
+	 	border-radius: 50%;
+	 	position: relative;
+	 	top:9px;
+	 	left: 4px;
+	 }
+	 
+	 
+	 #eyelight2
+	 {
+	 	width: 5px;
+	 	height: 5px;
+	 	background-color: white;
+	 	border-radius: 50%;
+	 	position: absolute;
+	 	top:92px;
+	 	left: 157px;
+	 	z-index: 3;
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 
+	 
+	 
+	 }
+	</style>
+	
+	<body>
+		
+		<div id="tuoyuan"></div>
+		
+		<div id="circle">
+		<div class="huzi">
+			
+		</div>	
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		<div class="huzi">
+			
+		</div>
+		
+		</div>
+		
+		
+		
+		
+			<div id="eyes1">
+				<div id="yanqiu1">
+					<div id="eyelight1"></div>
+				</div>
+			</div>
+			<div id="eyes2">
+				<div id="yanqiu2">
+					<div id=:"eyelight2"></div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div id="nacklace">
+		
+		
+		
+		</div>
+		
+		
+		<div id="smallbell">
+		<div id="detail"></div>	
+		<div id="detail2"></div>	
+		</div>
+		
+		<div id="nosemouse">
+		<div id="tongue">
+			
+		</div>	
+			
+		</div>
+		<div id="nose">
+			<div id="light"></div>
+		</div>
+		<div id="eyelight2"></div>
+	</body>
+</html>
