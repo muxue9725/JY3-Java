@@ -1,0 +1,48 @@
+#mayuntext
+
+{
+	margin-left: 10px;
+	flex: 0.8;
+	float: right;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-image: url(../../img/矢量图/lanqiu.jpg);
+	
+	
+}
+#mayuntext span:first-child
+
+
+{	position: relative;
+	top:44px;
+	font-size: 25px;
+	color: black;
+	margin: 15px;
+	
+	
+}
+#mayuntext span:nth-child(2)
+
+
+{	position: absolute;
+	top:382px;
+	left: 66px;
+	
+	
+	font-size: 15px;
+	color:black;
+	margin: 15px;
+}	
+#mayuntext span:nth-child(3)
+
+
+{	position: absolute;
+	top:460px;
+	left: 58px;
+	color: lightslategray;
+	
+	font-size: 15px;
+	color:lightslategray;
+	margin: 5px;
+}
