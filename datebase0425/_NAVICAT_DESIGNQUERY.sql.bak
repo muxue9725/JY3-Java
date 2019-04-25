@@ -1,0 +1,36 @@
+-- 1. 写出表Department增加一条记录和更新一条记录的SQL语句
+-- 增加记录值（‘12’，‘研发部’，‘张三’）；
+-- 更新dept_id=‘12’的记录（‘12’，‘研发部’，‘张三新’）
+-- 2. 需要给表Department增加一列字段notes，长度为10的字符串，默认值为‘0’，请写出
+-- 相关语句
+-- 3. 查找工资大于2000的员工记录，并按员工号id升序排列
+-- 4. 查找工资大于2000的员工所在部门、部门编号、部门经理、员工名称
+-- 5. 查找张三和李四所在部门所有人员的姓名
+-- 6. 查看每个部门的部门经理和部门人数，按部门人数排序
+-- 7. 删除表Department中的所有记录
+-- 8. 删除表Department
+-- 1 增加一条记录
+INSERT into table[(COLUMN[,COLUMN...])]
+VALUES (VALUE [,VALUE...])
+-- 更新一条数据
+UPDATE department
+set department_id=12
+SET department_depariment='研发部'
+SET department_name='张三新'
+WHERE department_id=12
+-- 2.需要给表Department增加一列字段notes，长度为10的字符串，默认值为‘0’，请写出
+-- 相关语句
+Alter table Department add notes varchar(10) default 0;
+-- 3. 查找工资大于2000的员工记录，并按员工号id升序排列
+Select name from Personnel where salary integer>2000 order by id;
+-- 4. 查找工资大于2000的员工所在部门、部门编号、部门经理、员工名称
+Select dept_name,dept_id ,dept_leader from Department where dept_id in(select dept_id from Personnel where salary integer>2000 );
+Select dept_name,dept_id,dept_leader from Department where dept_id in(select dept_id from Personnel where salary integer>2000 );
+-- 5. 查找张三和李四所在部门所有人员的姓名
+Select name from Personnel where name=’张三’and name=’李四’;
+-- 6. 查看每个部门的部门经理和部门人数，按部门人数排序
+Select d.dept_leader,(select count(*) from Personnel p where d.dept_id=p.dept_id) from Department d,personnel p group by d.dept_id order by co;
+-- 7. 删除表Department中的所有记录
+Delete from Department;
+-- 8. 删除表Department
+Drop table Department;
